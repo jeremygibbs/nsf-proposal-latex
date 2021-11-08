@@ -5,7 +5,7 @@
 %
 % Additions by: Ronni Grapenthin, New Mexico Tech.
 %
-% This version maintained/modified by: Jeremy A. Gibbs, Univ. of Utah
+% This version maintained/modified by: Jeremy A. Gibbs, NOAA NSSL
 %
 % This template is free source code. It comes without any warranty, to 
 % the extent permitted by applicable law. You can redistribute it and/or 
@@ -28,8 +28,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SINGLE PAGE DOCUMENTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{collab_person1}
-\include{collab_person2}
+% collaborators and other affiliations
+% must now use a template found here:
+% https://nsf.gov/bfa/dias/policy/coa.jsp
+% recommended reviewers (optional)
+\include{reviewers_yes}
+% reviewers to exclude (optional)
+\include{reviewers_no}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % A - COVER SHEET
@@ -43,8 +48,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This needs to fit on one page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{page}{1}
-\renewcommand{\thepage} {B--\arabic{page}}
 \newpage
 \include{b-summary}
 
@@ -57,45 +60,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % D - PROJECT DESCRIPTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Usually limited to 15 pages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage}{D--\arabic{page}}
 \include{d-project}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % E - REFERENCES CITED
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage}{E--\arabic{page}}
 \bibliographystyle{ametsoc}
 \bibliography{references}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % F - BIOGRAPHICAL SKETCHES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Limited to 3 pages per person
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage} {F--\arabic{page}}
 \include{f-bio_person1}
 \include{f-bio_person2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % G - BUDGET JUSTIFICATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Limited to 3 pages
+% Limited to 5 pages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage} {G--\arabic{page}}
 \include{g-budget}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % H - CURRENT AND PENDING SUPPORT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage} {H--\arabic{page}}
 \include{h-support_person1}
 \include{h-support_person2}
 
@@ -103,24 +100,18 @@
 % I - FACILITIES & RESOURCES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage} {I--\arabic{page}}
 \include{i-facilities}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % J - DATA MANAGEMENT PLAN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\pagenumbering{arabic}
-\renewcommand{\thepage} {J--\arabic{page}}
 \include{j-data}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % J - POSTDOC MENTORING PLAN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newpage
-%\pagenumbering{arabic}
-%\renewcommand{\thepage} {J--\arabic{page}}
-%\noindent{\Large \bf POSTDOCTORAL MENTORING PLAN}
+\newpage
+\include{j-mentor}
 
 \end{document}

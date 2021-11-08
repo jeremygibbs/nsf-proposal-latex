@@ -5,7 +5,7 @@
 %
 % Additions by: Ronni Grapenthin, New Mexico Tech.
 %
-% This version maintained/modified by: Jeremy A. Gibbs, Univ. of Utah
+% This version maintained/modified by: Jeremy A. Gibbs, NOAA NSSL
 %
 % This template is free source code. It comes without any warranty, to 
 % the extent permitted by applicable law. You can redistribute it and/or 
@@ -14,28 +14,27 @@
 % http://www.wtfpl.net for more details.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{proposalnsf}[2008/06/01 NSF proposal style v1.3 SGLS]
+\ProvidesClass{nsf_proposal}[2008/06/01 NSF proposal style v1.3 SGLS]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions
 \LoadClass[11pt]{article}
 \RequirePackage{calc}
 \RequirePackage{natbib}
 \RequirePackage{mathpazo}
-\setlength{\paperheight}{11in}
-\setlength{\paperwidth}{8.5in}
-\addtolength{\voffset}{-1in}
-\addtolength{\hoffset}{-1in}
-\setlength{\topmargin}{1in}
-\setlength{\oddsidemargin}{1in}
-\setlength{\evensidemargin}{1in}
-\setlength{\textwidth}{\paperwidth - 2in}
-\setlength{\textheight}{\paperheight - 2in}
-\setlength{\footskip}{36pt}
-\setlength{\marginparsep}{0.5cm}
-\setlength{\marginparwidth}{1.5cm}
-\setlength{\headheight}{0pt}
-\setlength{\headsep}{0pt}
 
+% For some reason, the NSF Fastlane pdf upload checker would flag margins
+% as being less than 1 inch of margin was set to 1 inch here. Setting to 
+% 1.02 inches seemed to work. 
+% see here as known issue: 
+% https://listserv.neu.edu/cgi-bin/wa?A3=ind1901&L=RESEARCH-USERS&E=quoted-printable&P=21260&B=--_000_BL0PR06MB44833EAAE66439E2154D03E399820BL0PR06MB4483namp_&T=text%2Fhtml;%20charset=us-ascii&XSS=3&header=1
+\RequirePackage{geometry}
+\geometry{
+a4paper,
+margin={1.02in},
+footskip={0.25in},
+headheight={0in},
+headsep={0in}
+}
 \RequirePackage{fancyhdr}
 \pagestyle{fancyplain}
 \renewcommand{\headrulewidth}{0pt}
@@ -45,6 +44,4 @@
 \lfoot{}
 \cfoot{\thepage}
 \rfoot{}
-
-%\def\@makefnmark{\hbox{$^{\fnsymbol{\@mpfn}}\m@th$}}
 \renewcommand\floatpagefraction{.9}
