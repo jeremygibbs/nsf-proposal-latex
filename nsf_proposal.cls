@@ -19,7 +19,7 @@
 \ProcessOptions
 \LoadClass[11pt]{article}
 \RequirePackage{calc}
-\RequirePackage{natbib}
+%\RequirePackage{natbib}
 %\RequirePackage{mathpazo}
 %\RequirePackage{times}
 %\RequirePackage{charter}
