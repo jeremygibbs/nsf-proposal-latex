@@ -29,7 +29,7 @@
 % https://listserv.neu.edu/cgi-bin/wa?A3=ind1901&L=RESEARCH-USERS&E=quoted-printable&P=21260&B=--_000_BL0PR06MB44833EAAE66439E2154D03E399820BL0PR06MB4483namp_&T=text%2Fhtml;%20charset=us-ascii&XSS=3&header=1
 \RequirePackage{geometry}
 \geometry{
-a4paper,
+letterpaper,
 margin={1.02in},
 footskip={0.25in},
 headheight={0in},
