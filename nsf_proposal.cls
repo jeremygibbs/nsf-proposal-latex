@@ -20,7 +20,11 @@
 \LoadClass[11pt]{article}
 \RequirePackage{calc}
 \RequirePackage{natbib}
-\RequirePackage{mathpazo}
+%\RequirePackage{mathpazo}
+%\RequirePackage{times}
+%\RequirePackage{charter}
+\RequirePackage{mathptmx}
+
 
 % For some reason, the NSF Fastlane pdf upload checker would flag margins
 % as being less than 1 inch of margin was set to 1 inch here. Setting to 
