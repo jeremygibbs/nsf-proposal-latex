@@ -40,13 +40,22 @@
 \usepackage{enumitem}
 \usepackage{tabularx}
 \usepackage{ragged2e}
+\usepackage{xcolor}
+
 \newcolumntype{Y}{ >{\RaggedRight\arraybackslash}X}
 \newcommand\T{\rule{0pt}{2.6ex}}      
 \newcommand\B{\rule[-1.2ex]{0pt}{0pt}}
+
 \renewcommand{\refname}{References Cited}
+
 \newcommand{\degrees}{$\!\!$\char23$\!$}
+
 \def\rrr#1\\{\par
 \medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
 \hangindent=4em\hangafter=1#1}}}
-\def\baselinestretch{1}
+
+\renewcommand\baselinestretch{1}
 \pagestyle{empty}
+
+%\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
